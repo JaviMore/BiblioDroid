@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.moreno.javier.bibliodroid.MainActivity">
+    <item android:id="@+id/anyadir"
+        android:title="@string/anyadir"/>
+    <item android:id="@+id/buscar"
+        android:title="@string/buscar"/>
+    <item android:id="@+id/acerca"
+        android:title="@string/acerca"/>
+</menu>

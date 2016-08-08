@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_libro"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView android:id="@+id/tvlibro_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt"
+            android:text="@string/libro"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView android:id="@+id/portada_comp"
+        android:layout_width="65dp"
+        android:layout_height="90dp"
+        android:maxHeight="90dp"
+        android:maxWidth="65dp"
+        android:src="@drawable/illuminati"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView android:id="@+id/titulo_comp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:text="The Illuminati"
+        android:layout_toRightOf="@+id/portada_comp"
+        android:paddingLeft="40dp"
+        android:paddingTop="95dp"
+        android:textColor="#000000"/>
+    <TextView android:id="@+id/autor_comp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weishaupt"
+        android:layout_toRightOf="@+id/portada_comp"
+        android:layout_below="@+id/titulo_comp"
+        android:paddingLeft="40dp"
+        android:paddingTop="10dp"
+        android:textSize="8pt"/>
+    <TextView android:id="@+id/edito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/editorial"
+        android:layout_below="@+id/portada_comp"
+        android:paddingLeft="40dp"
+        android:paddingTop="40dp"
+        android:textSize="8pt"
+        android:textColor="#000000"/>
+    <TextView android:id="@+id/isbn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/isbn13"
+        android:layout_below="@+id/edito"
+        android:paddingLeft="40dp"
+        android:textSize="8pt"
+        android:textColor="#000000"/>
+    <TextView android:id="@+id/isbn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/isbn10"
+        android:layout_below="@+id/isbn3"
+        android:paddingLeft="40dp"
+        android:textSize="8pt"
+        android:textColor="#000000"/>
+
+    <TextView android:id="@+id/editorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Light"
+        android:layout_toRightOf="@+id/edito"
+        android:layout_below="@+id/portada_comp"
+        android:paddingTop="40dp"
+        android:paddingLeft="25dp"
+        android:textSize="8pt"/>
+    <TextView android:id="@+id/isbn13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0123456789012"
+        android:layout_toRightOf="@+id/isbn3"
+        android:layout_below="@+id/editorial"
+        android:paddingLeft="50dp"
+        android:textSize="8pt"/>
+
+    <TextView android:id="@+id/isbn10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0123456789"
+        android:layout_toRightOf="@+id/isbn1"
+        android:layout_below="@+id/isbn13"
+        android:paddingLeft="50dp"
+        android:textSize="8pt" />
+    <TextView android:id="@+id/descrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descripcion"
+        android:layout_below="@+id/isbn1"
+        android:paddingLeft="40dp"
+        android:paddingTop="40dp"
+        android:textSize="8pt"
+        android:textColor="#000000"/>
+    <TextView android:id="@+id/descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="6pt"
+        android:text="They are watching you. Take care."
+        android:layout_below="@+id/descrip"
+        android:paddingLeft="40dp"
+        android:paddingTop="20dp"
+        />
+</RelativeLayout>

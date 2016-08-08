@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.moreno.javier.bibliodroid.LibroActivity">
+    <item android:id="@+id/editar"
+        android:title="@string/editar"
+        android:icon="@drawable/pencil"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/borrar"
+        android:title="@string/borrar"
+        android:icon="@drawable/rubbish"
+        app:showAsAction="ifRoom"/>
+</menu>

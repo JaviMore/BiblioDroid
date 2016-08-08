@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbarAlwaysDrawHorizontalTrack="true">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_edit_libro"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <Spinner android:id="@+id/spinner_toolbar_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <ImageView android:id="@+id/portada_comp_edit"
+        android:layout_width="65dp"
+        android:layout_height="90dp"
+        android:maxHeight="90dp"
+        android:maxWidth="65dp"
+        android:src="@drawable/illuminati"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="10dp"/>
+    <EditText android:id="@+id/titulo_comp_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8pt"
+        android:text="The Illuminati"
+        android:hint="Título"
+        android:paddingLeft="0dp"
+        android:paddingTop="95dp"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editorial_edit" />
+    <EditText android:id="@+id/autor_comp_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Autor"
+        android:text="Weishaupt"
+        android:paddingLeft="0dp"
+        android:paddingTop="10dp"
+        android:textSize="8pt"
+        android:layout_above="@+id/editorial_edit"
+        android:layout_alignStart="@+id/editorial_edit" />
+    <TextView android:id="@+id/edito_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/editorial"
+        android:paddingLeft="40dp"
+        android:paddingTop="40dp"
+        android:textSize="8pt"
+        android:textColor="#000000"
+        android:layout_alignBottom="@+id/editorial_edit"
+        android:layout_alignParentStart="true" />
+    <TextView android:id="@+id/isbn3_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/isbn13"
+        android:paddingLeft="40dp"
+        android:textSize="8pt"
+        android:textColor="#000000"
+        android:layout_above="@+id/isbn10_edit"
+        android:layout_toStartOf="@+id/editorial_edit" />
+    <TextView android:id="@+id/isbn1_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/isbn10"
+        android:paddingLeft="40dp"
+        android:textSize="8pt"
+        android:textColor="#000000"
+        android:layout_alignBottom="@+id/isbn10_edit"
+        android:layout_alignStart="@+id/isbn3_edit" />
+
+    <EditText android:id="@+id/editorial_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Light Editorial"
+        android:layout_toRightOf="@+id/edito_edit"
+        android:layout_below="@+id/portada_comp_edit"
+        android:paddingTop="40dp"
+        android:paddingLeft="25dp"
+        android:textSize="8pt" />
+    <EditText android:id="@+id/isbn13_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0123456789012"
+        android:layout_toRightOf="@+id/isbn3_edit"
+        android:layout_below="@+id/editorial_edit"
+        android:paddingLeft="50dp"
+        android:textSize="8pt"/>
+
+    <EditText android:id="@+id/isbn10_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0123456789"
+        android:layout_toRightOf="@+id/isbn1_edit"
+        android:layout_below="@+id/isbn13_edit"
+        android:paddingLeft="50dp"
+        android:textSize="8pt" />
+    <TextView android:id="@+id/descrip_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descripcion"
+        android:paddingLeft="40dp"
+        android:paddingTop="10dp"
+        android:textSize="8pt"
+        android:textColor="#000000"
+        android:layout_below="@+id/isbn10_edit"
+        android:layout_alignParentStart="true" />
+    <EditText android:id="@+id/descripcion_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="6pt"
+        android:layout_marginLeft="40dp"
+        android:text="They are watching you. Take care."
+        android:paddingLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="20dp"
+        android:layout_below="@+id/descrip_edit" />
+    <Button
+        android:id="@+id/Aceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aceptar"
+        android:layout_below="@id/descripcion_edit"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"/>
+    <Button
+        android:id="@+id/Cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancelar"
+        android:layout_below="@id/descripcion_edit"
+        android:layout_toRightOf="@id/Aceptar"
+        android:layout_marginTop="30dp"/>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <ImageView android:id="@+id/portada"
+        android:layout_width="65dp"
+        android:layout_height="90dp"
+        android:maxHeight="90dp"
+        android:maxWidth="65dp"
+        android:src="@drawable/illuminati"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:text="The Illuminati"
+        android:layout_toRightOf="@+id/portada"
+        android:paddingLeft="40dp"
+        android:paddingTop="20dp"
+        android:textColor="#000000"/>
+    <TextView android:id="@+id/autor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Light"
+        android:layout_toRightOf="@+id/portada"
+        android:layout_below="@+id/titulo"
+        android:paddingLeft="40dp"
+        android:paddingTop="10dp"
+        android:textSize="8pt"/>
+</RelativeLayout>

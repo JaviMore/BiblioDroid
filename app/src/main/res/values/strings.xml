@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">BiblioDroid</string>
+    <string name="action_settings">Settings</string>
+    <string name="acerca">Acerca de</string>
+    <string name="anyadir">Añadir</string>
+    <string name="buscar">Buscar</string>
+    <string name="editorial">EDITORIAL:</string>
+    <string name="isbn13">ISBN13:</string>
+    <string name="isbn10">ISBN10:</string>
+    <string name="descripcion">DESCRIPCIÓN:</string>
+    <string name="creador">Javier Moreno</string>
+    <string name="creditos">Alumno de DAM</string>
+    <string name="acercade_text">Acerca de</string>
+    <string name="libro">Libro</string>
+    <string name="editar">Editar</string>
+    <string name="borrar">Borrar</string>
+    <string name="tv_buscar_toolbar">Buscar</string>
+    <string name="titulo">Titulo:</string>
+    <string name="btn_buscar">Buscar</string>
+    <string name="instituto">IES Abastos</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="aceptar">Aceptar</string>
+</resources>

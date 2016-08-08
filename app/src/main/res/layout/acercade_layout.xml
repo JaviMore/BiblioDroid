@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_acercade"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView android:id="@+id/acercadetv_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt"
+            android:text="@string/acercade_text"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/mi_foto"
+        android:scaleType="fitXY"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="200dp"
+        android:layout_height="225dp"
+        android:src="@drawable/javier"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/mi_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/creador"
+        android:textColor="#000000"
+        android:textSize="10pt"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mi_foto" />
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mi_nombre"
+        android:text="@string/creditos"
+        android:textSize="8pt"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/instituto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descripcion"
+        android:text="@string/instituto"
+        android:textSize="8pt"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/icon_attribution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instituto"
+        android:paddingTop="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+
+</RelativeLayout>
